@@ -10,7 +10,7 @@ Follow these steps to install the module:
 
 1. **Download the Module**:
     
-    - Clone the modlul in addons folder 
+    - Clone the modul in addons folder 
 
     - git clone https://github.com/vishvajitjambuti/Odoo_Modul_Test.git
 
@@ -41,7 +41,7 @@ Follow these steps to install the module:
 
 
 ![Kanban View for the user progress](./images/test2.png)
-*kanban View for the user Selection progress bar*
+*Kanban View for the user Selection progress bar*
 
 
 
@@ -51,4 +51,4 @@ Follow these steps to install the module:
 
 
 ![Kanban View for the user Rating progress](./images/test4.png)
-*kanban View for the user rating progress bar*
+*Kanban View for the user rating progress bar*
