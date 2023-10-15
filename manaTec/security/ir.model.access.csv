@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+manaTec.access_customer_checklist,access_customer_checklist,manaTec.model_customer_checklist,base.group_user,1,1,1,1
+manaTec.access_star_rating,access_star_rating,manaTec.model_star_rating,base.group_user,1,1,1,1

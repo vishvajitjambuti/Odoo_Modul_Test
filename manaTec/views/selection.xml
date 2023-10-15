@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+    <record id="view_Selection_test" model="ir.ui.view">
+        <field name="name">selectionTest.field.tree</field>
+        <field name="model">selectionTest.field</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" string="User Name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_selection_form" model="ir.ui.view">
+        <field name="name">selectionTest.field.form</field>
+        <field name="model">selectionTest.field</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="selection_1"/>
+                        <field name="selection_2"/>
+                        <field name="selection_3"/>
+                        <field name="selection_4"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+
+    </record>
+    <record id="view_res_users_kanban_selection" model="ir.ui.view">
+    <field name="name">selection.kanban.</field>
+    <field name="model">selectionTest.field</field>
+    <field name="arch" type="xml">
+        <kanban>
+            <templates>
+                <t t-name="kanban-box">
+                    <div class="o_kanban_content">
+                        <group>
+                        <field name="name"/>
+                        <!--<field name="rating_system" widget="priority"/> -->
+                        <!-- Add other fields as needed progress bar -->
+                  <!--        </group>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+    </field>
+</record> -->
+    <record id="action_customer_selection" model="ir.actions.act_window">
+        <field name="name">Selection Test</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">selectionTest.field</field>
+        <field name="view_mode">tree,form,kanban</field>
+</odoo>

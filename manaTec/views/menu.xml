@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_manaTec_root"
+              name="manatech"
+              sequence="10"/>
+    <menuitem
+            id="manatec_menu_checklist"
+            name="Checklist"
+            parent="menu_manaTec_root"
+            sequence="10"/>
+    <menuitem id="menu_checklist"
+              name="manatechChecklist"
+              parent="manatec_menu_checklist"
+              sequence="10"/>
+
+    <menuitem id="menu_rating"
+              name="Star Rating System"
+              parent="menu_manaTec_root"
+              action="manaTec.action_customer_rating"
+              sequence="10"/>
+
+
+    <menuitem id="menu_customer"
+              name="manaTech Selection"
+              parent="menu_manaTec_root"
+              sequence="10"/>
+
+    <menuitem id="menu_customer_checklist"
+              name="CustomerChecklist"
+              parent="menu_customer"
+              action="action_customer_checklist"
+              sequence="10"/>
+
+<!--
+    <menuitem id="Manatec_selection"
+              name="Selection Test"
+              parent="menu_manaTec_root"
+              action="manaTec.action_customer_Selection"
+              sequence="10"/>
+-->
+
+</odoo>

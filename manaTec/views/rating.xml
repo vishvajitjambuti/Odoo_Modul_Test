@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_star_rating_tree" model="ir.ui.view">
+        <field name="name">star.rating.tree</field>
+        <field name="model">star.rating</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="user_name" string="User Name"/>
+                <field name="rating_system" string="rating_system" widget="priority"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_res_users_kanban_custom" model="ir.ui.view">
+    <field name="name">res.users.kanban.custom</field>
+    <field name="model">star.rating</field>
+    <field name="arch" type="xml">
+        <kanban>
+            <templates>
+                <t t-name="kanban-box">
+                    <div class="o_kanban_content">
+                        <group>
+                        <field name="user_name"/>
+                        <!--<field name="rating_system" widget="priority"/> -->
+                        <!-- Add other fields as needed -->
+                            <field name="progress" widget="progressbar" />
+                        </group>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+    </field>
+</record>
+
+    <record id="action_customer_rating" model="ir.actions.act_window">
+    <field name="name">ManaTec rating</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">star.rating</field>
+    <field name="view_mode">tree,form,kanban</field>
+
+    </record>
+
+</odoo>
